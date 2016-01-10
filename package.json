@@ -4,6 +4,9 @@
   "description": "Personal portfolio website for Chris Zlaket.",
   "main": "server.js",
   "author": "Zcharnell",
+  "scripts":{
+    "postinstall":"./node_modules/bower/bin/bower install"
+  },
   "dependencies": {
     "express": "~4.12.x",
     "mongoose": "~3.6.2",
