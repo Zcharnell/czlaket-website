@@ -5,7 +5,7 @@
   "main": "server.js",
   "author": "Zcharnell",
   "scripts":{
-    "postinstall":"./node_modules/bower/bin/bower install"
+    "postinstall":"bower install"
   },
   "dependencies": {
     "express": "~4.12.x",
