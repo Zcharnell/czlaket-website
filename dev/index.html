@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<meta name='author' content='Zachary Charnell'>
+  	<!-- <meta name='keywords' content='Zachary,Charnell,Zach,Web,Developer,Development,Front,End,Front-End,SunAngel,Zakuu,Warring,States'> -->
+  	<meta name='description' content='The best web developer you can find. I work to make your company more successful. Email me at zcharnell@gmail.com.'>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	
+  	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,300italic,100italic,400italic,700italic' rel='stylesheet' type='text/css'>
+  	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href="css/open-iconic.css" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet" />
+	<title>Chris Zlaket</title>
+</head>
+
+<body>
+	<div id="ng-app" role="main" ng-app="ZcharApp" ng-controller="ZcharAppController as main">
+		<div id="app">
+			<!-- <div ui-view="header" id="header"></div> -->
+			<div ui-view="centerCol" id="centerCol"></div>
+		</div>
+	</div>
+<!-- build:js js/vendor.js -->
+<!-- bower:js -->
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="../bower_components/angular-resource/angular-resource.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js js/zcharnellwebsite.js -->
+<script src="js/main.js"></script>
+<!-- <script src="js/utils/filters.js"></script> -->
+<script src="js/utils/ZcharAppConfig.js"></script>
+<script src="js/controllers/HeaderCtrl.js"></script>
+<script src="js/controllers/LandingCtrl.js"></script>
+<script src="js/directives/project.js"></script>
+<script src="js/directives/slide.js"></script>
+<script src="js/services/ZcharAppService.js"></script>
+<!-- endbuild -->
+
+<script>
+angular.module('ZcharAppConfig').config(function (ZcharAppConfigProvider) {
+	ZcharAppConfigProvider.set({
+		'name':'Zcharnell Website'
+	});
+});
+</script>
+</body>
+</html>
+

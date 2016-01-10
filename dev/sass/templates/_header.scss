@@ -1,0 +1,33 @@
+header{
+    @include clearfix;
+    width:100%;
+    position:absolute;
+    top:0;
+    background-color:$colorMainBlue url("../assets/img/background4.png") repeat left top;
+    color:#F3F3F3;
+    // background-color:#E3E3E3;
+    // color:#999999;
+    z-index:150;
+    // box-shadow: 0px 1px 5px #999999;
+
+    .container{
+        @include clearfix;
+        position:relative;
+        margin:15px 1%;
+        font-size:14px;
+    }
+
+    .title{
+        padding:0 10px;
+        float:left;
+        // text-transform:uppercase;
+    }
+
+    nav{
+        float:right;
+
+        span {
+            padding:0 10px;
+        }
+    }
+}

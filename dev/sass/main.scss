@@ -1,0 +1,73 @@
+@import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
+//@import "../../bower_components/neat/app/assets/stylesheets/neat";
+@import "utils/mixins";
+@import "utils/resets";
+
+@import "animations";
+@import "colors";
+@import "typography";
+@import "components";
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+
+
+
+/*
+ *
+ *  Styles
+ *
+ */
+
+
+* {
+  margin:0;
+  padding:0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  overflow-x:hidden;
+  background-color:#666666;
+}
+
+.image-loader{
+  display:none;
+}
+
+
+//--------------------------------------------------
+//    [DIRECTIVE STYLES]
+//--------------------------------------------------
+@import "directives/slide";
+// @import "directives/programsModal";
+// @import "directives/messagesModal";
+// @import "directives/radioIcons";
+// @import "directives/timepicker";
+// @import "directives/loaderoverlay";
+// @import "directives/collapse";
+// @import "directives/checkbox";
+// @import "directives/nameWheel";
+// @import "directives/alertbar";
+// @import "directives/titlebar";
+// @import "directives/customSelect";
+// @import "directives/contactInput";
+// @import "directives/deleteModal";
+// @import "directives/notificationBar";
+
+//--------------------------------------------------
+//    [AREA-SPECIFIC STYLES]
+//--------------------------------------------------
+@import "templates/header";
+@import "templates/landing";
+// @import "templates/contacts-details";
+// @import "templates/error";
+
+@import "responsive";
