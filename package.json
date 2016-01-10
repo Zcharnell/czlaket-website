@@ -16,7 +16,8 @@
     "errorhandler":"~1.4.2",
     "aws-sdk": "*",
     "grunt": "^0.4.1",
-    "grunt-cli": "~0.1.6"
+    "grunt-cli": "~0.1.6",
+    "bower":"*"
   },
   "devDependencies": {
     "grunt-angular-templates": "^0.5.6",
