@@ -42,8 +42,8 @@ body{
   display:none;
 
   #loader1{
-    background-size: 1px 1px;
-    background: #000 url("../assets/img/city-image.jpg") no-repeat center top;
+    // background-size:100px 100px;
+    // background: #000 url("../assets/img/city-image.jpg") no-repeat -9999px -9999px;
   }
 }
 
